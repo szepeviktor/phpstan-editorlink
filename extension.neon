@@ -1,0 +1,3 @@
+services:
+    errorFormatter.editorLink:
+        class: SzepeViktor\PHPStan\EditorLink\EditorLinkErrorFormatter

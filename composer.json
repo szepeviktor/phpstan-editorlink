@@ -1,0 +1,39 @@
+{
+    "name": "szepeviktor/phpstan-editorlink",
+    "type": "phpstan-extension",
+    "description": "PHPStan error formatter for terminal-based editors",
+    "keywords": [
+        "static analysis",
+        "code analysis",
+        "code analyse",
+        "editor",
+        "line number",
+        "phpstan"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "~7.1",
+        "phpstan/phpstan": "^0.12.48"
+    },
+    "require-dev": {
+        "phpstan/phpstan-strict-rules": "^0.12.5"
+    },
+    "extra": {
+        "phpstan": {
+            "includes": [
+                "extension.neon"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "SzepeViktor\\PHPStan\\EditorLink\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "@test:phpstan"
+        ],
+        "test:phpstan": "phpstan analyze --ansi"
+    }
+}
